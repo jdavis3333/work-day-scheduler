@@ -19,13 +19,19 @@ updateTime();
 var currentTimeFloor = Math.floor(currentTime);
 console.log(currentTimeFloor); 
 //why is console log returning Nan? 
-if 
+// if 
 
 
 
 //Save timeblock text to local storage
 
+var savedText = [];
 
+$("#btn").click(function() {
+    savedText.push($("input.form-control"))
+    localStorage.setItem("hour", JSON.stringify(savedText));
+    
+})
 
 
 

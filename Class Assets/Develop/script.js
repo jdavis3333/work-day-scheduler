@@ -1,6 +1,4 @@
 var currentTime;
-var timeArr = [1,2,3,4,5,8,9,10,11,12]
-
 
 
 //Static time (day)
@@ -9,33 +7,43 @@ $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 //Dynamic time
 let updateTime = function () {
-    currentTime = moment().format('h:mm:ss')
+    currentTime = moment().format('H')
     $("#time").text(currentTime)
     console.log(currentTime)
 }
 updateTime();
 
-//Dynamically update blocks based on time
-var currentTimeFloor = Math.floor(currentTime);
-console.log(currentTimeFloor); 
-//why is console log returning Nan? 
-// if 
+//Dynamically update block color based on time
 
+// var blockTime = parseInt($(this).attr("id"));
+// console.log(blockTime)
+
+// if (currentTime === blockTime) {
+//     .form-control to .present
+// }
+//     if else {(currentTime > blockTime)
+//     .form-control to .past
+//     }
+//     else {
+//     .form-control to .future
+//     }
+// }
 
 
 //Save timeblock text to local storage
 
-var savedText = [];
+// var savedText = $("#input-group-text").value.trim();
 
-$("#btn").click(function() {
-    savedText.push($("input.form-control"))
-    localStorage.setItem("hour", JSON.stringify(savedText));
-    
+$(".btn").click(function() {
+    var timeBlock = $(this).attr("id").split("-")[0];
+    var userText = $(`#${timeBlock}-input`).val().trim();  //"#"+textBlock+"-input"
+    console.log(timeBlock, userText,`#${timeBlock}-input`);
+    localStorage.setItem(timeBlock, userText);
+
+    // console.log(savedText);
 })
 
+function displayLocalStorage () {
 
-
-
-
-
+}
 

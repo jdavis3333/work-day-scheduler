@@ -57,7 +57,7 @@ displayLocalStorage ();
 
 ## Deployed Link
 
-* [See Live Site](https://jdavis3333.github.io/code-quiz/)
+* [See Live Site](https://jdavis3333.github.io/work-day-scheduler/.)
 
 
 ## Authors

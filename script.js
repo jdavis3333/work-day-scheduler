@@ -1,9 +1,7 @@
 var currentTime;
 
-
 //Static time (day)
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
-
 
 //Dynamic time
 let updateTime = function () {

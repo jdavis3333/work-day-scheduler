@@ -16,6 +16,8 @@ The goal of this project was to create a calendar application that allows the us
 
 ### Installing
 
+![HW Complete](https://user-images.githubusercontent.com/66157077/85817588-350cef80-b723-11ea-8c60-3bd3318e4f7b.PNG)
+
 * Applied the current date to the jumbotron using the thrid party app momentjs.com
 ```
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));

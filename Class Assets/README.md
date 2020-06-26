@@ -45,27 +45,3 @@ You are required to submit the following for review:
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
-
-<!-- 0. create the empty blocks for DONE
-    -use bootstrap to create 9 blocks
-    -left block will have static time displayed
-    -center block will be editable 
-    -right block will be a button for saving -->
-
-<!-- 1. display the current day at the top of the calendar DONE -->
-
-2. color code the time blocks
-<!-- -put dynamic time in JS DONE -->
-<!-- -create id's for each time block DONE -->
--create if statement: if it's within the dynamic time, refelct that to corresponding ID. if else the time is past, color =x, etc.
-
-4. on save button, save the text for the event into local storage
-create a .click for the button class that will save the input to the local storage.
-
-5. make sure the events are not rewritten when page is refreshed.
-
-<!-- re-read documentation
-
-say ok, what is the time now. moment allows you to compare dates. use the functionality built in. use (is the time now, within one of the blocks?) convert a regurlar js date into a moment object. then compare them. process of associating time block with time = you can spcify with moment the format of the string it should consume. make sure comparing apples to apples. make sure to spcify the format. 
-
-option: -->

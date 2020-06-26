@@ -44,6 +44,8 @@ $(".btn").click(function() {
 })
 
 function displayLocalStorage () {
-
+    for (let i = 8; i < 18; i++) {
+        $(`#${i}-input`).val(localStorage.getItem(i));
+    }
 }
-
+displayLocalStorage ();
